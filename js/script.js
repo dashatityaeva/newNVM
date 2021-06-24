@@ -361,7 +361,7 @@ function init() {
     contactsMap.geoObjects.options.set({
         // Макет иконок всех объектов карты.
         iconLayout: 'default#image',
-        iconImageHref: '../img/point.svg',
+        iconImageHref: './img/point.svg',
         iconImageSize: [56, 67],
         iconImageOffset: [-28, -67],
     });
@@ -430,7 +430,7 @@ function init() {
 
 //         }, {
 //             iconLayout: 'default#image',
-//             iconImageHref: '../img/point.svg',
+//             iconImageHref: './img/point.svg',
 //             iconImageSize: [56, 67],
 //             iconImageOffset: [-28, -67],
 //         }
@@ -504,7 +504,7 @@ function initMain() {
 
             }, {
                 iconLayout: 'default#image',
-                iconImageHref: '../img/point.svg',
+                iconImageHref: './img/point.svg',
                 iconImageSize: [56, 67],
                 iconImageOffset: [-28, -67],
             }
