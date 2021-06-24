@@ -551,12 +551,12 @@ function initMain() {
 
             switch (collection) {
                 case kindergartenCollection: {
-                    let listHints = document.querySelector(`img[data-type="kindergartenCollection"]`).nextSibling;
+                    let listHints = document.querySelector(`img[data-type="kindergartenCollection"]`).nextElementSibling;
                     listHints.insertAdjacentHTML("beforeend", ` <li class="map-block__subcol-li" data-id="${i}" data-coords="${objPlacemarks[i].latitude},${objPlacemarks[i].longitude}">${objPlacemarks[i].hintContent}</li>`);
                     break;
                 }
                 case shopCollection: {
-                    let listHints = document.querySelector(`img[data-type="shopCollection"]`).nextSibling;
+                    let listHints = document.querySelector(`img[data-type="shopCollection"]`).nextElementSibling;
                     listHints.insertAdjacentHTML("beforeend", ` <li class="map-block__subcol-li" data-id="${i}" data-coords="${objPlacemarks[i].latitude},${objPlacemarks[i].longitude}">${objPlacemarks[i].hintContent}</li>`);
                     break;
                 }
@@ -575,7 +575,7 @@ function initMain() {
     links.forEach(function (link) {
         link.addEventListener('click', function () {
 
-            let type = link.closest('.map-block__subcol-list').previousSibling.dataset.type;
+            let type = link.closest('.map-block__subcol-list').previousElementSibling.dataset.type;
 
             switch (type) {
                 case 'kindergartenCollection': {
