@@ -306,8 +306,9 @@ $(document).ready(function () {
                 $('.gallery__mb').slick();
             }
         } else {
-            $('.projects__main-slider')?.slick('unslick');
-            $('.gallery__mb')?.slick('unslick');
+            $('.projects__main-slider, .gallery__mb').filter('.slick-initialized').slick('unslick');
+            // $('.projects__main-slider')?.slick('unslick');
+            // $('.gallery__mb')?.slick('unslick');
         }
     })
 
