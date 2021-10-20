@@ -288,7 +288,7 @@ $(document).ready(function () {
     //===основной слайдер проектов
     function addSlider() {
         if ($('.projects__main-slider')) {
-            $('.projects__main-slider').slick({
+            $('.projects__main-slider').not('.slick-initialized').slick({
                 infinite: true,
                 slidesToScroll: 1,
             });
@@ -303,7 +303,7 @@ $(document).ready(function () {
             addSlider();
 
             if ($('.gallery__mb')) {
-                $('.gallery__mb').slick();
+                $('.gallery__mb').not('.slick-initialized').slick();
             }
         } else {
             $('.projects__main-slider, .gallery__mb').filter('.slick-initialized').slick('unslick');
